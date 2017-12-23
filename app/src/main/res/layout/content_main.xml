@@ -8,13 +8,21 @@
     tools:context="com.example.jh.themeswitchdemo.MainActivity"
     tools:showIn="@layout/app_bar_main">
 
+    <com.example.jh.themeswitchdemo.theme1.widget.CustomViewPager
+        android:layout_below="@+id/toolbar"
+        android:id="@+id/main_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="跳转"
+        android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
 </android.support.constraint.ConstraintLayout>
